@@ -1,0 +1,467 @@
+/* Speak Page Styles */
+
+/* Hero Section */
+.speak-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--text-dark);
+    color: var(--text-light);
+    overflow: hidden;
+    margin-top: 70px;
+    padding: 4rem 0;
+}
+
+.speak-hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../images/speak/TEDxUQ_Seat-optimized.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.speak-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.speak-hero h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    letter-spacing: -2px;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.speak-hero-quote {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.speak-hero-quote p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.95);
+    font-style: italic;
+    font-weight: 300;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Main Content Section */
+.speak-content-section {
+    padding: 6rem 0;
+    background: #000000;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    position: relative;
+}
+
+.speak-content-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+}
+
+.speak-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 4rem;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.speak-text-content h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.speak-text-content p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+}
+
+.speak-text-content p:last-child {
+    margin-bottom: 0;
+}
+
+.speak-text-content a {
+    color: #888888;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+}
+
+.speak-text-content a:hover {
+    color: #aaaaaa;
+    border-bottom-color: #888888;
+}
+
+.speak-image-content {
+    position: sticky;
+    top: 100px;
+}
+
+.speak-content-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.speak-content-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(235, 0, 40, 0.3);
+}
+
+/* CTA Section */
+.speak-cta-section {
+    padding: 5rem 0;
+    background: #000000;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    position: relative;
+}
+
+.speak-cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+}
+
+.speak-cta-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.speak-cta-content h3 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.speak-cta-content > p {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.speak-cta-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(235, 0, 40, 0.4);
+    letter-spacing: 0.6px;
+    margin-bottom: 2rem;
+}
+
+.speak-cta-button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(235, 0, 40, 0.5);
+    color: white;
+}
+
+.speak-contact {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 2rem;
+}
+
+.speak-contact a {
+    color: #888888;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.speak-contact a:hover {
+    color: #aaaaaa;
+}
+
+/* FAQs Section */
+.speak-faq-section {
+    padding: 6rem 0;
+    background: #000000;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    position: relative;
+}
+
+.speak-faq-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+}
+
+.speak-faq-section h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+.speak-faq-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--primary-color);
+}
+
+.speak-faq-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.speak-faq-image-content {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.speak-faq-image-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(235, 0, 40, 0.3);
+}
+
+.speak-faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.speak-faq-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.speak-faq-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.speak-faq-item summary {
+    padding: 1.25rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    transition: color 0.3s ease;
+}
+
+.speak-faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.speak-faq-item summary::after {
+    content: '+';
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.speak-faq-item[open] summary::after {
+    content: '−';
+    transform: translateY(-50%) rotate(0deg);
+}
+
+.speak-faq-item summary:hover {
+    color: var(--primary-color);
+}
+
+.speak-faq-answer {
+    padding: 0 1.5rem 1.5rem;
+}
+
+.speak-faq-answer p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    font-weight: 300;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .speak-content-wrapper,
+    .speak-faq-content {
+        grid-template-columns: 280px 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .speak-hero {
+        min-height: auto;
+        padding: 3rem 0;
+    }
+
+    .speak-hero-background {
+        background-attachment: scroll;
+    }
+
+    .speak-hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .speak-hero-quote p {
+        font-size: 1.25rem;
+    }
+
+    .speak-content-section,
+    .speak-cta-section,
+    .speak-faq-section {
+        padding: 4rem 0;
+    }
+
+    .speak-content-wrapper,
+    .speak-faq-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .speak-image-content {
+        position: static;
+    }
+
+    .speak-text-content h2,
+    .speak-cta-content h3,
+    .speak-faq-section h2 {
+        font-size: 2rem;
+    }
+
+    .speak-faq-content {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .speak-hero {
+        padding: 2rem 0;
+    }
+
+    .speak-hero h1 {
+        font-size: 2.5rem;
+        letter-spacing: -1px;
+    }
+
+    .speak-hero-quote p {
+        font-size: 1.1rem;
+    }
+
+    .speak-content-section,
+    .speak-cta-section,
+    .speak-faq-section {
+        padding: 3rem 0;
+    }
+
+    .speak-text-content h2,
+    .speak-cta-content h3,
+    .speak-faq-section h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .speak-text-content p {
+        font-size: 1rem;
+    }
+
+    .speak-cta-button {
+        padding: 0.9rem 2rem;
+        font-size: 1rem;
+    }
+}
